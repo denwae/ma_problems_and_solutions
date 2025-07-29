@@ -1,4 +1,4 @@
-# @Transactional Annotation kann nicht genutzt werden, wenn man Transactional EventListener als Spies testen möchte.
+# `@Transactional` Annotation und Spies in Tests
 
 Die Spies erhalten nie ein Event, da standardmäßig ein `@TransactionalEventListener` sein Event erst nach dem Commit der umgebenden Transaktion feuert. Im Test wird die Transaktion durch die `@Transactional` Annotation am Ende aber immer zurückgerollt und damit läuft dein Listener niemals an.
 

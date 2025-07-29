@@ -1,4 +1,4 @@
-# Zu viele Application Module Tests - Timeouts beim starten von Testcontainer
+# Timeouts beim starten von Testcontainer
 
 Beim durchführen von Tests schlagen ab einem gewissen Punkt Tests fehl, weil die nötigen Test Container, wegen eines Timeout, nicht mehr gestartet werden können. 
 

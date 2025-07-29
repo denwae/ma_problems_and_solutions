@@ -1,5 +1,4 @@
-# Bei der Verwendung mit Spring Modulith @Externalized wird beim Consumer eine conversion Exception geworfen. 
-
+# `@Externalized` Serialization Probleme
 Beim Listener kommen Objekte stets im Byteformat an. Dabei ist nicht richtig ersichtlich wieso dies passiert, da Kafka als 
 Producer nur in Json serialisieren sollte. Es wird dann nicht richtig deserialized und kafka kann dann nicht die Payload an das objekt mappen. 
 

@@ -1,4 +1,4 @@
-# ApplicationEvents können nicht als Konstruktor-Injektion eingefügt werden
+# ApplicationEvents können nicht mit Konstruktor-Injektion injiziert werden
 
 In Spring-Tests ist ApplicationEvents kein reguläres Bean im ApplicationContext, sondern ein Test-Helper, der nach der Test-Instanzierung vom TestContext-Framework eingespeist wird.
 

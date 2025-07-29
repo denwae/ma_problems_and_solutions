@@ -1,4 +1,4 @@
-# Kafka Listener werden bootstrapped trotz BootstrapMode.STANDALONE
+# Kafka Listener werden bootstrapped trotz `BootstrapMode.STANDALONE`
 
 Tests schlagen fehl, weil in vorherigen Tests Daten in die Repositories geschrieben wurden.
 
