@@ -1,4 +1,4 @@
-# Es können nicht mehrere ValueObjects desselben Typen in einer Klasse genutz werden
+# Es können nicht mehrere ValueObjects desselben Typen in einer Klasse genutzt werden
 Hibernate mapped nicht ValueObjects der selben Klasse standardmäßig zu unterschiedlichen Spalten.
 
 ## Code
