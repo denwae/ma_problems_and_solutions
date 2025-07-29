@@ -1,4 +1,4 @@
-# Spring doesn't recognize service Annotation
+# jMolecules `@Service` - Beans werden nicht erkannt
 
 Spring erkennt die @Service Annotationen von Jmolecules nicht und zeigt nur lokal einen Fehler an. Die Anwendung und Tests starten 
 und laufen weiterhin. 

@@ -13,5 +13,5 @@ Dieser Ordner enthält alle Probleme, welche mit jMolecules zusammenhängen.
 - [MapStruct Mapping Problem - Zugriff auf jMolecules Identifier nicht möglich](mapstruct.md)
 - [Gespiegelte Entities - `BeanCreationException`](mirrored_entities.md)
 - [Es können nicht mehrere ValueObjects desselben Typen in einer Klasse genutz werden](multiple_vo.md)
-- [Spring doesn't recognize service Annotation](service_annotation.md)
+- [jMolecules `@Service` - Beans werden nicht erkannt](service_annotation.md)
 - [jMolecules `@Service` Annotation - Die Anwendung startet nicht](service.md)
