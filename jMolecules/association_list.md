@@ -1,4 +1,10 @@
 # jMolecules kann nicht Listen von Associations zu JPA mappen
+
+## Meta
+Status: Als fehlendes Feature akzeptiert, gefixt.
+Ticket: https://github.com/xmolecules/jmolecules-integrations/issues/335
+
+## Zusammenfassung
 Wenn eine Liste mit `Association` persistiert werden muss wird eine `org.hibernate.MappingException` geworfen, da weder `@ElementCollection`, `@OneToMany` oder `@ManyToMany` genutzt wird.  Wenn eine toMany Annotation genutzt wird, wird ein Fehler geworfen, dass `Association` keine Entity ist. Wenn `@ElementCollection` genutzt wird, wird ein Fehler geworfen, dass der empfohlene Typ für eine `Association` nicht gefunden werden kann.
 
 ## Code
