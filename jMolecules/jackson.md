@@ -1,4 +1,12 @@
 # JMolecules Jackson Integration funktioniert nicht mit Kotlin
+
+## Meta
+Status: Nicht reproduzierbar. Testcase hinzugefügt, der nicht fehlschlägt.
+Ticket: https://github.com/xmolecules/jmolecules-integrations/issues/336
+
+Bei korrektem Kotlin Jackson Setup (siehe Commit an dem Ticket oben) funktioniert das. Es ist wichtig, das Jackson Kotlin Modul zu registrieren. Boot scheint das aktuell nicht automatisch zu registrieren. Ich habe das ans Team weitergetragen. Ist das aktiv, funktioniert die Instantierung von Single-Value data-Classes die `Identifier` oder `ValueObject` sind sowohl mit statischer Factory-Methode als auch ohne. In zweitem Fall wird einfach der Konstruktor genutzt.
+
+## Zusammenfassung
 Wenn ein JMolecules Identifier in einem DTO, [JMolecules-Jackson Integration](https://github.com/xmolecules/jmolecules-integrations/tree/main/jmolecules-jackson) genutzt wird und die Factory richtig implementiert ist, wird die Factory trotzdem von Jackson nicht gefunden.
 
 ## Code

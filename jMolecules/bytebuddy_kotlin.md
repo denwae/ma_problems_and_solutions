@@ -1,4 +1,10 @@
 # ByteBuddy kann keine Kotlin Setter umwandeln
+
+## Meta
+Status: Als Dokumentationsproblem akzeptiert, gefixt.
+Ticket: https://github.com/xmolecules/jmolecules-integrations/issues/334
+
+## Zusammenfassung
 Beim ausführen des `transform` Tasks der ByteBuddy Plugin wird ein Fehler geworfen, weil Setter nicht umgewandelt werden können. Kotlin scheint die Setter als `set-?` zu benennen.
 
 ## Code
@@ -51,5 +57,5 @@ Validation für die [ByteBuddy Plugin ausschalten](https://github.com/raphw/byte
 	        <validated>false</validated>  
         </initialization>  
     </configuration>  
-</plugin>intln("Hello World!)
+</plugin>
 ```
