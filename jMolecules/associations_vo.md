@@ -1,4 +1,11 @@
 # Entities in Value Objects werden nicht richt gemapped
+
+## Meta
+
+Status: In Frage
+Fragen: Es ergibt aus DDD-Sicht keinen Sinn, aus ValueObjects Entitäten zu referenzieren, da erstere immutable sind und letztere nicht. Ich vermute die Verirrung kommt daher, dass JPA es erlaubt aus einem Embeddable Entitäten zu referenzieren. Ich würde empfehlen, aus dem ValueObject lediglich eine ID zu referenzieren, üblicherweise auch jediglich eine eines Aggregates, da Entitäten in DDD eigentlich nur lokale Identität haben.
+
+## Zusammenfassung
 Wenn eine Entity innerhalb eines Value Objects referenziert wird, wird eine Hibernate `MappingException` geworfen.
 
 ## Code

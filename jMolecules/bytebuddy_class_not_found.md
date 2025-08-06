@@ -1,4 +1,11 @@
 # ByteBuddy Plugin - `ClassNotFoundException`
+
+## Meta
+Status: Analysiert, Dokumentation angepasst
+Ticket: https://github.com/xmolecules/jmolecules-integrations/issues/334
+
+## Zusammenfassung
+
 Beim ausführen des `transform` Tasks mit dem `jmolecules-bytebudd-nodep` Plugin, wird eine `ClassNotFoundException: org.hibernate.annotations.EmbeddableInstantiator` geworfen.
 
 Wenn die `jmolecules-bytebuddy` Plugin genutzt wird, wird stattdessen eine `ExceptionInInitializerError: NullPointerException` geworfen.
