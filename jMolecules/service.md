@@ -1,4 +1,9 @@
 # jMolecules `@Service` Annotation - Die Anwendung startet nicht
+
+## Meta
+Status: akzeptiert, dokumentiert – siehe https://github.com/xmolecules/jmolecules-integrations/tree/main/jmolecules-bytebuddy#kotlin-specialties
+
+## Zusammenfassung
 Wenn die JMolecules `@Service` Annotation genutzt wird, dann kann die Anwendung nicht starten. Dabei wird eine `org.springframework.beans.factory.BeanCreationException` geworfen.
 
 ## Code
