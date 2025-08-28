@@ -1,5 +1,10 @@
 # Timeouts beim starten von Testcontainer
 
+## Meta
+Status: akzeptiert, mitigiert
+Details: Es gab einen Bug in Modulith, der dafür gesorgt hat, dass für jede Testklasse mit `@AMT` ein neuer `ApplicationContext` gestartet wurde. Das ist [behoben](https://github.com/spring-projects/spring-modulith/issues/1216), sollte jetzt also weniger oft auftreten.
+
+## Zusammenfassung
 Beim durchführen von Tests schlagen ab einem gewissen Punkt Tests fehl, weil die nötigen Test Container, wegen eines Timeout, nicht mehr gestartet werden können. 
 
 ## Code

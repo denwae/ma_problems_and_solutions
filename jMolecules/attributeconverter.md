@@ -1,5 +1,13 @@
 # jMolecules Associations können nicht richtig konvertiert werden
+
+## Meta
+Status: unverständlich
+Fragen: Kann es sein, dass das Fehlen von `@ElementCollection` hier mit reinspielt?
+
+## Zusammenfassung
 Beim Update von `ReferenceCompany` wird der `ReferenceEmployeeAssociationConverter` genutzt, anstelle vom definierten Converter, für die `requiredField`
+
+(Satz unvollständig)
 
 ## Code
 ```kotlin

@@ -1,5 +1,10 @@
 # Kafka Listener werden bootstrapped trotz `BootstrapMode.STANDALONE`
 
+## Meta
+Status: akzeptiert, in Framework 7.0 behoben
+Details: Teilen sich Integrationstests einen Messagebroker, so landen Messages, die ein `@AMT` für ein spezielles Modul publiziert in diesem Broker. ApplicationContexte, die im Cache liegen enthalten potentiell Listener, die auf diese Events hören und führen Geschäftslogik aus, die dann den Test, der eigentlich gegen einen anderen ApplicationContext läuft beeinflussen. In Spring Framework 7.0 werden die Kontexte, die gerade nicht benutzt werden "stillgelegt". D. h. sie bekommen explizit nach Nutzung ein `Lifecycle.stop()`-Signal, so dass die Listener abgeschaltet werden, solange der assoziierte `AC` nicht in Benutzung ist. Details [hier](https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-7.0-Release-Notes#pausing-of-test-application-contexts).
+
+## Zusammenfassung
 Tests schlagen fehl, weil in vorherigen Tests Daten in die Repositories geschrieben wurden.
 
 ## Code

@@ -1,5 +1,10 @@
 # ApplicationEvents können nicht mit Konstruktor-Injektion injiziert werden
 
+## Meta
+Status: You're holding it wrong ;), "fixed".
+Details: Das ist eine Einschränkung von `ApplicationEvents`. Ich hatte [hier](https://github.com/spring-projects/spring-framework/issues/35297) um Verbesserung des Javadoc gebeten.
+
+## Zusammenfassung
 In Spring-Tests ist ApplicationEvents kein reguläres Bean im ApplicationContext, sondern ein Test-Helper, der nach der Test-Instanzierung vom TestContext-Framework eingespeist wird.
 
 ## Code
